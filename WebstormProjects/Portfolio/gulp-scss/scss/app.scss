@@ -1,0 +1,169 @@
+body{
+  //background: #213647;
+  background: #F5F5F5;
+  font-family: "Lucida Sans";
+}
+.container{
+  margin: 0 auto;
+}
+.Header {
+  background: Red;
+  .container {
+    .top-bar {
+      .user {
+        color: white;
+      }
+      .star {
+        color: white;
+      }
+      .briefcase {
+        color: white;
+      }
+      .file{
+        color: white;
+      }
+      .envelope{
+        color: white;
+      }
+    }
+  }
+}
+.Header{
+  height: 60px;
+  .container{
+    .top-bar{
+      float: right;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      ul{
+        li{
+          a{
+            text-decoration: none;
+          }
+          margin-left: 10px;
+          display: inline-block;
+          list-style-type: none;
+        }
+      }
+    }
+  }
+}
+#profile{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: 200px;
+}
+.PaymentButton{
+  margin-left: 205px;
+}
+.ContactMe{
+  margin-left: 175px;
+}
+.Name{
+  color: #E8B40C;
+}
+.designation{
+  color: black;
+}
+.about{
+  color: black;
+}
+.fa-facebook-square{
+  font-size: 60px;
+  color: #3a559f
+}
+.fa-twitter-square{
+  font-size: 60px;
+}
+.fa-linkedin{
+  font-size: 60px;
+}
+.social-icons{
+  margin-right: 20px;
+}
+.skills{
+  color: #E8B40C;;
+}
+.skilldetails{
+  margin-left: 175px;
+}
+.progressbar{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: #eeeeee;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px #222;
+}
+.title{
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  padding-left: 10px;
+  float: left;
+  font-weight: bold;
+  color: #fff;
+  line-height: 2.5;
+  z-index: 10000;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 2px 0 2px;
+  text-shadow: 1px 1px 1px #000;
+}
+.progress{
+  height: 40px;
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: 2px 0 2px #555;
+}
+.progress_value{
+  position: relative;
+  padding-right: 10px;
+  float: right;
+  line-height: 2.5;
+  font-weight: bold;
+  color: #455a64;
+  z-index: 10000;
+}
+.htmlcolor{
+  background: #f0652a;
+}
+
+.csscolor{
+  background: #34aadc;
+}
+.javascriptcolor{
+  background: #0769AF;
+}
+.nodejscolor{
+background: green;
+}
+.vuejscolor{
+background: #9ACD32;
+}
+.reactjscolor{
+  background: #008B8B;
+}
+.html{
+  background: #f0652a;
+}
+.css{
+  background: #34aadc;
+}
+.javascript{
+  background:#0769AF;
+}
+.nodejs{
+  background: green;
+}
+.vuejs{
+  background: #9ACD32;
+}
+.reactjs{
+  background: #008B8B;
+}
+.Mywork{
+  color: #E8B40C;
+}

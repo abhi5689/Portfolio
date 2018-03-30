@@ -5,4 +5,5 @@ $(document).ready(function () {
     $('.nodejs').animate({width: '75%'}, 2000);
     $('.vuejs').animate({width: '70%'}, 2000);
     $('.reactjs').animate({width: '70%'}, 2000);
+
 });

@@ -13,23 +13,41 @@ body{
       .user {
         color: white;
       }
+      .user:hover{
+        color: #b71c1c;
+      }
       .star {
         color: white;
+      }
+      .star:hover{
+        color: #b71c1c;
       }
       .briefcase {
         color: white;
       }
+      .briefcase:hover{
+        color: #b71c1c;
+      }
       .file{
         color: white;
       }
+      .file:hover{
+        color: #b71c1c;
+      }
       .envelope{
         color: white;
+      }
+      .envelope:hover{
+        color: #b71c1c;
       }
     }
   }
 }
 .Header{
   height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
   .container{
     .top-bar{
       float: right;
@@ -81,9 +99,6 @@ body{
 }
 .social-icons{
   margin-right: 20px;
-}
-.skills{
-  color: #E8B40C;;
 }
 .skilldetails{
   margin-left: 175px;
@@ -170,6 +185,9 @@ background: #9ACD32;
 .MyResume{
   color: #E8B40C;
 }
+.myskills{
+  color: #E8B40C;
+}
 .divider{
   width:20px;
   height:auto;
@@ -178,6 +196,7 @@ background: #9ACD32;
 .contact{
   color: #E8B40C;
 }
-.invalid-tooltip{
+#skills{
   position: relative;
+  z-index: -1;
 }

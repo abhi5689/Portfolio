@@ -9,17 +9,30 @@ body {
   background: Red; }
   .Header .container .top-bar .user {
     color: white; }
+  .Header .container .top-bar .user:hover {
+    color: #b71c1c; }
   .Header .container .top-bar .star {
     color: white; }
+  .Header .container .top-bar .star:hover {
+    color: #b71c1c; }
   .Header .container .top-bar .briefcase {
     color: white; }
+  .Header .container .top-bar .briefcase:hover {
+    color: #b71c1c; }
   .Header .container .top-bar .file {
     color: white; }
+  .Header .container .top-bar .file:hover {
+    color: #b71c1c; }
   .Header .container .top-bar .envelope {
     color: white; }
+  .Header .container .top-bar .envelope:hover {
+    color: #b71c1c; }
 
 .Header {
-  height: 60px; }
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000; }
   .Header .container .top-bar {
     float: right;
     padding-top: 20px;
@@ -64,9 +77,6 @@ body {
 
 .social-icons {
   margin-right: 20px; }
-
-.skills {
-  color: #E8B40C; }
 
 .skilldetails {
   margin-left: 175px; }
@@ -152,6 +162,9 @@ body {
 .MyResume {
   color: #E8B40C; }
 
+.myskills {
+  color: #E8B40C; }
+
 .divider {
   width: 20px;
   height: auto;
@@ -159,3 +172,7 @@ body {
 
 .contact {
   color: #E8B40C; }
+
+#skills {
+  position: relative;
+  z-index: -1; }

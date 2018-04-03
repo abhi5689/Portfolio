@@ -75,8 +75,14 @@ body {
 .fa-linkedin {
   font-size: 60px; }
 
-.social-icons {
+.fa-github-square {
+  font-size: 60px; }
+
+a.social-icons {
   margin-right: 20px; }
+
+a.social-icons:hover {
+  text-decoration: none; }
 
 .skilldetails {
   margin-left: 175px; }
@@ -159,6 +165,9 @@ body {
 .Mywork {
   color: #E8B40C; }
 
+.stillexploring {
+  color: #E8B40C; }
+
 .MyResume {
   color: #E8B40C; }
 
@@ -176,3 +185,23 @@ body {
 #skills {
   position: relative;
   z-index: -1; }
+
+.phonedetails {
+  color: #E8B40C; }
+
+.phonenumber {
+  color: red; }
+
+.center-align {
+  text-align: center; }
+
+footer {
+  background-color: #D3D3D3;
+  padding: 10px; }
+
+small {
+  color: #696969; }
+
+.fa-smile {
+  vertical-align: middle;
+  color: #696969; }

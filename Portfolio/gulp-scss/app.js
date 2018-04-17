@@ -20,7 +20,8 @@ app.get('/', function (req, res) {
 });
 
 app.post('/send', function (req, res) {
-    console.log(req.body);
+
+    // console.log(req.body);
     const output = `
          <p>You have a new contact request</p>
          <h3>Contact details</h3>
@@ -63,7 +64,11 @@ app.post('/send', function (req, res) {
             res.render('contact');
         });
     });
+
+    res.redirect('/');
 });
+
+
 
 app.listen(8085, function () {
     console.log('server started...');

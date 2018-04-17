@@ -14,6 +14,7 @@
     <script type="application/javascript" src="public/index.js"></script>
     <link rel="stylesheet" type="text/css" href="public/web-fonts-with-css/css/fontawesome-all.css">
     <link rel="stylesheet" type="text/css" href="public/css/app.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript">
         window.$zopim || (function (d, s) {
@@ -71,7 +72,7 @@
             }
         }
 
-        @media only screen and (max-width: 403px) {
+        @media only screen and (max-width: 992px) {
             .Name{
                 margin-top: 30px;
             }
@@ -123,7 +124,7 @@
     <div class="container">
         <div class="section scroll" id="about">
             <div class="row">
-                <div class="col s12 col m4">
+                <div class="col-sm-12 col-md-12 col-lg-6">
                     <div class="pic-wrap">
                         <img src="public/img/profile.png" alt="profile" id="profile">
                     </div>
@@ -140,26 +141,26 @@
                             &nbsp;<i class="fas fa-caret-right"></i>&nbsp;</a>
                     </div>
                 </div>
-                <div class="col s12 col m8">
+                <div class="col col-sm-12 col-md-12 col-lg-6">
                     <div class="Name">Abhishek Savekar
                     </div>
                     <br>
                     <div class="designation">
-                        Web Developer specialising in Reactjs, Vuejs
+                        Web Developer specialising in <b>Reactjs</b>,<b>Vuejs</b>
                     </div>
                     <br>
                     <div class="about">
-                        I am a software developer based in Mumbai, India. My specialization lies in website designing,
-                        developing web applications.
+                        I am a software developer based in Mumbai, India. My specialization lies in Website designing
+                        and development.
                         <br>
                         <br>
-                        Technology has always kept me curious and inquisitive and has inspired me to pick up an
-                        empirical approach to every aspect of my professional life. The passion that I have cultivated
-                        for logic and structure of coding was the motivating factor for me to strive forward and write
-                        efficient code.
+                        I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
+                        I'm always keen to learn new things in technology and evolve accordingly. Coding has developed
+                        the passion in me to move towards evolving Technology. As a Web developer, I enjoy using my obsessive
+                        attention to detail & my unequivocal love for making things.
                         <br>
                         <br>
-                        I like to take up challenging problems and convert them into beautiful solutions.
+                        Feel free to take a look at my latest projects in <b>My Work</b> section.
                     </div>
                     <br>
                     <a href="https://www.facebook.com/abhishek.savekar" target="_blank" class="social-icons">
@@ -232,7 +233,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col s12">
+                <div class="col-sm-12">
                     <div class="skilldetails">
                         <div class="stillexploring">
                             <h5>Still Exploring</h5>
@@ -306,7 +307,7 @@
         <br>
         <div class="section-scroll" id="resume">
             <div class="row">
-                <div class="col s12">
+                <div class="col-sm-12">
                     <div class="skilldetails">
                         <div class="MyResume">My Resume</div>
                         <p>Download my Resume in word document or pdf format.</p>
@@ -331,11 +332,11 @@
         <br>
         <div class="section-scroll" id="contact">
             <div class="row">
-                <div class="col s12">
+                <div class="col-sm-12">
                     <div class="skilldetails">
                         <div class="contact">Contact Me</div>
                         <br>
-                        <form class="needs-validation" novalidate method="POST" action="/send">
+                        <form  onsubmit="return validation()" class="needs-validation"  novalidate method="POST" action="/send" name="myform">
                             <label for="validationTooltip01">Name</label>
                             <input type="text" class="form-control" id="validationTooltip01" placeholder="First Name"
                                    name="Name">
@@ -352,12 +353,10 @@
                             <br>
                             <label for="validationTooltip03">Message</label>
                             <textarea name="Message" cols="30" rows="6" class="form-control" id="validationTooltip03"
-                                      placeholder="Message"></textarea>
-                            <div class="invalid-tooltip">
-                                Please provide a valid Message.
-                            </div>
+                                      placeholder="Message">
+                            </textarea>
                             <br>
-                            <button class="btn btn-primary" onclick="validation();" type="submit">Submit form</button>
+                            <button class="btn btn-primary" type="submit">Submit form</button>
                         </form>
                     </div>
                 </div>
@@ -383,8 +382,20 @@
     </footer>
 </div>
 <script>
+
     function validation() {
-        swal("Message Sent", "Thank you for the details!", "success")
+
+        let x = document.forms["myform"]["Name"].value;
+        let y = document.forms["myform"]["Email"].value;
+        let z = document.forms["myform"]["Message"].value;
+
+        if(x=="" || y=="" || z==""){
+            swal("Invalid Data", "Please enter valid data", "warning");
+            return false;
+        }else
+        swal("Message Sent", "Thank you for the details!", "success");
+
+
     }
 </script>
 </body>

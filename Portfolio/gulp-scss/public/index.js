@@ -27,7 +27,8 @@ $(document).ready(function () {
 
     $('li a').click(function () {
         $('ul').toggleClass('active')
-    })
+    });
+
 
 });
 
